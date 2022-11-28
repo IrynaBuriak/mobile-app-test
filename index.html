@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="section video">
+        <div class="container video__block">
+          <div class="video__text">
+            <h2 class="video__title">WATCH THE VIDEO</h2>
+            <p class="video__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+            <ul class="mobile-icon">
+              <li class="mobile-icon__item">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" width="30" height="35">
+                    <use xlink:href="./images/icons.svg#icon-apple"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-icon__item">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" width="32" height="36">
+                    <use xlink:href="./images/icons.svg#icon-android"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="video__picture">
+            <picture>
+              <source srcset="./images/iphone-mobile@2x.png 2x" media="(max-width:767px)" />
+              <source srcset="./images/iphone-tablet.png 1x, ./images/iphone-tablet@2x.png 2x" media="(max-width: 1279px)" />
+              <source srcset="./images/iphone-desctop.png 1x, ./images/iphone-desctop@2x.png 2x" media="(min-width: 1280px)" />
+
+              <img src="./images/iphone-mobile.png" alt="Jon Doe Managing Director" />
+            </picture>
+            <button type="button" class="video__open-btn" data-modal-open>
+              <svg class="icon" width="35px" height="35px">
+                <use xlink:href="./images/icons.svg#icon-play"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="video__wrap is-hidden" data-modal>
+        <div class="video__window">
+          <button data-modal-close type="button" class="video__close-btn">
+            <svg class="icon" width="19.21px" height="19.21px">
+              <use xlink:href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <iframe class="video__youtube" src="https://www.youtube.com/embed/QBKn_f4ADt4" title="YouTube video player" rel="noopener noreferrer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        </div>
+      </div>
+
+      <section class="section team">
+        <div class="container">
+          <h2 class="team__title">OUR TEAM</h2>
+          <p class="team__desc">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__block">
+                <picture>
+                  <source srcset="./images/team1-mobile@2x.jpg 2x" media="(max-width:767px)" />
+                  <source srcset="./images/team1-tablet.jpg 1x, ./images/team1-tablet@2x.jpg 2x" media="(max-width:1199px)" />
+                  <source srcset="./images/team1-desctop.jpg 1x, ./images/team1-desctop@2x.jpg 2x" media="(min-width:1200px)" />
+                  <img src="./images/team1-mobile.jpg" alt="Jon Doe Managing Director" />
+                </picture>
+                <h3 class="team__name">Jon Doe</h3>
+                <h4 class="team__job">Managing Director</h4>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__block">
+                <picture>
+                  <source srcset="./images/team2-mobile@2x.jpg 2x" media="(max-width:767px)" />
+                  <source srcset="./images/team2-tablet.jpg 1x, ./images/team2-tablet@2x.jpg 2x" media="(max-width:1199px)" />
+                  <source srcset="./images/team2-desctop.jpg 1x, ./images/team2-desctop@2x.jpg 2x" media="(min-width:1200px)" />
+                  <img src="./images/team2-mobile.jpg" alt="Jane Doe Lead Designer" />
+                </picture>
+                <h3 class="team__name">Jane Doe</h3>
+                <h4 class="team__job">Lead Designer</h4>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__block">
+                <picture>
+                  <source srcset="./images/team3-mobile@2x.jpg 2x" media="(max-width:767px)" />
+                  <source srcset="./images/team3-tablet.jpg 1x, ./images/team3-tablet@2x.jpg 2x" media="(max-width:1199px)" />
+                  <source srcset="./images/team3-desctop.jpg 1x, ./images/team3-desctop@2x.jpg 2x" media="(min-width:1200px)" />
+                  <img src="./images/team3-mobile.jpg" alt="Jane Doe Lead Developer" />
+                </picture>
+                <h3 class="team__name">Jane Doe</h3>
+                <h4 class="team__job">Lead Developer</h4>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__block">
+                <picture>
+                  <source srcset="./images/team4-mobile@2x.jpg 2x" media="(max-width:767px)" />
+                  <source srcset="./images/team4-tablet.jpg 1x, ./images/team4-tablet@2x.jpg 2x" media="(max-width:1199px)" />
+                  <source srcset="./images/team4-desctop.jpg 1x, ./images/team4-desctop@2x.jpg 2x" media="(min-width:1200px)" />
+                  <img src="./images/team4-mobile.jpg" alt="Jon Doe Sr. UI Designer" />
+                </picture>
+                <h3 class="team__name">Jon Doe</h3>
+                <h4 class="team__job">Sr. UI Designer</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./js/modal-video.js"></script>
+  </body>
+</html>
