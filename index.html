@@ -16,6 +16,8 @@
   <body>
     <header></header>
     <main>
+      <section class="section hero"></section>
+      <section class="section features"></section>
       <section class="section video">
         <div class="container video__block">
           <div class="video__text">
@@ -122,8 +124,78 @@
           </ul>
         </div>
       </section>
+
+      <section class="section testimonials"></section>
+
+      <section class="section contacts">
+        <div class="container">
+          <h2 class="contacts__title">contact us</h2>
+          <div class="contacts__form">
+            <form autocomplete="on">
+              <div class="contacts__label">
+                <label>
+                  <input class="contacts__input" type="name" name="name" placeholder="Name" />
+                </label>
+              </div>
+              <div class="contacts__label">
+                <label>
+                  <input class="contacts__input" type="email" name="email" placeholder="Email" />
+                </label>
+              </div>
+              <div class="contacts__label">
+                <label>
+                  <textarea class="contacts__input contacts__message" name="message" rows="10" placeholder="Message"></textarea>
+                </label>
+              </div>
+            </form>
+          </div>
+          <button type="submit" class="contacts__button">SUBMIT</button>
+          <h3 class="contacts__title contacts__title--sub">Get in touch with us</h3>
+          <p class="contacts__desc">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique.</p>
+          <div class="socials">
+            <ul class="socials__list">
+              <li>
+                <a class="socials__link" href="#" rel="noopener noreferrer">
+                  <svg class="socials__item" width="20px" height="20px">
+                    <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                    <!-- <use xlink:href="./images/icons.svg#icon-facebook-hover"></use> -->
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials__link" href="#" rel="noopener noreferrer">
+                  <svg class="socials__item" width="20px" height="20px">
+                    <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                    <!-- <use xlink:href="./images/icons.svg#icon-twitter-hover"></use> -->
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials__link" href="#" rel="noopener noreferrer">
+                  <svg class="socials__item" width="20px" height="20px">
+                    <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                    <!-- <use xlink:href="./images/icons.svg#icon-linkedin-hover"></use> -->
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__nav">
+            <ul class="contacts__list">
+              <li>
+                <a class="contacts__link" href="tel:+xx-xxxx-xxxx-xx">+xx-xxxx-xxxx-xx</a>
+              </li>
+              <li>
+                <a class="contacts__link" href="mailto:goIteens@gmail.com">goIteens@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2019 GoIteens Template. All Rights Reserved</p>
+    </footer>
 
     <script src="./js/modal-video.js"></script>
   </body>

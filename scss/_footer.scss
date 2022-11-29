@@ -1,0 +1,23 @@
+.footer {
+  position: absolute;
+  transform: translateY(-100%);
+  padding: 22px 24px;
+  width: 100%;
+  border-top: 1px solid white;
+
+  @media screen and (min-width: 768px) {
+    padding: 22px 32px;
+  }
+
+  &__copyright {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.214;
+    color: white;
+    max-width: 193px;
+
+    @media screen and (min-width: 768px) {
+      max-width: fit-content;
+    }
+  }
+}
