@@ -82,7 +82,7 @@
   img {
     margin-top: 40px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279px) {
       margin: 0 auto;
     }
 
@@ -109,9 +109,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // fill: white;
     fill: transparent;
     transition: opacity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67), visibility cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+    @media screen and (min-width: 1280px) {
+      transform: translate(50%, -50%);
+    }
 
     &:hover,
     &:focus {
@@ -121,6 +124,7 @@
   }
 }
 .video-icon {
+  fill: white;
   z-index: 2;
 }
 
@@ -150,7 +154,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67), visibility cubic-bezier(0.17, 0.67, 0.83, 0.67);
 
     &:hover::before {
       opacity: 1;
