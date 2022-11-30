@@ -14,11 +14,45 @@
     <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
-    <header></header>
     <main>
-      <section class="section hero hide"></section>
-      <section class="section features hide"></section>
-      <section class="section video">
+      <section class="hero">
+        <div class="container hero__cont">
+          <div class="container-text">
+            <h1 class="hero__title">Introducing Mobileapp</h1>
+            <h2 class="hero__undertitle">Maecenas vitae tellus sapien. Prasent</h2>
+            <ul class="hero__list">
+              <li class="hero__list-item">
+                <p class="hero__list-p">semper scelerisque tristique a enim</p>
+              </li>
+              <li class="hero__list-item">
+                <p class="hero__list-p">Integer ut mattis nulla, eget vehicula elit</p>
+              </li>
+              <li class="hero__list-item">
+                <p class="hero__list-p">Prasent rutrum ac nunc et</p>
+              </li>
+            </ul>
+            <button type="button" class="main-button">Download</button>
+          </div>
+          <!-- <button type="button" class="main-button">Download</button> -->
+          <div class="hero__deco">
+            <picture>
+              <source srcset="./images/deco-hero-tablet.png 1x, ./images/deco-hero-tablet@2x.png 2x" media="(max-width: 1279px)" />
+              <source srcset="./images/deco-hero-desctop.png 1x, ./images/deco-hero-desctop@2x.png 2x" media="(min-width: 1280px)" />
+              <img src="./images/deco-hero-tablet.png" alt="iphone" />
+            </picture>
+          </div>
+          <div class="hero__picture">
+            <picture>
+              <source srcset="./images/iphone-hero-mobile.png 1x, ./images/iphone-hero-mobile@2x.png 2x" media="(max-width: 767px)" />
+              <source srcset="./images/iphone-hero-tablet.png 1x, ./images/iphone-hero-tablet@2x.png 2x" media="(max-width: 1279px)" />
+              <source srcset="./images/iphone-hero-desctop.png 1x, ./images/iphone-hero-desctop@2x.png 2x" media="(min-width: 1280px)" />
+              <img src="./images/iphone-hero-mobile.png" alt="iphone" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section video hide">
         <div class="container video__block">
           <div class="video__text">
             <h2 class="video__title">WATCH THE VIDEO</h2>
@@ -40,13 +74,13 @@
               </li>
             </ul>
           </div>
-          <div class="video__picture">
+          <div class="video__picture hide">
             <picture>
-              <source srcset="./images/iphone-mobile@2x.png 2x" media="(max-width:767px)" />
+              <source srcset="./images/iphone-mobile-blur@2x.png 2x" media="(max-width:767px)" />
               <source srcset="./images/iphone-tablet.png 1x, ./images/iphone-tablet@2x.png 2x" media="(max-width: 1279px)" />
               <source srcset="./images/iphone-desctop.png 1x, ./images/iphone-desctop@2x.png 2x" media="(min-width: 1280px)" />
 
-              <img src="./images/iphone-mobile.png" alt="Jon Doe Managing Director" />
+              <img src="./images/iphone-mobile-blur.png" alt="Jon Doe Managing Director" />
             </picture>
             <button type="button" class="video__open-btn" data-modal-open>
               <svg class="icon" width="35px" height="35px">
@@ -57,7 +91,7 @@
         </div>
       </section>
 
-      <div class="video__wrap is-hidden" data-modal>
+      <div class="video__wrap is-hidden hide" data-modal>
         <div class="video__window">
           <button data-modal-close type="button" class="video__close-btn">
             <svg class="icon" width="19.21px" height="19.21px">
@@ -68,7 +102,7 @@
         </div>
       </div>
 
-      <section class="section team">
+      <section class="section team hide">
         <div class="container">
           <h2 class="team__title">OUR TEAM</h2>
           <p class="team__desc">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
@@ -125,9 +159,7 @@
         </div>
       </section>
 
-      <section class="section testimonials hide"></section>
-
-      <section class="section contacts">
+      <section class="section contacts hide">
         <div class="container">
           <h2 class="contacts__title">contact us</h2>
           <div class="contacts__form">
@@ -193,7 +225,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hide">
       <p class="footer__copyright">&copy; 2019 GoIteens Template. All Rights Reserved</p>
     </footer>
 
