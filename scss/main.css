@@ -94,9 +94,6 @@ img {
 
 .hero {
   background: #06071b;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
 }
 @media screen and (min-width: 768px) {
   .hero {
