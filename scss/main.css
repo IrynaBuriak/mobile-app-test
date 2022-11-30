@@ -123,6 +123,7 @@ img {
 }
 .hero__cont {
   display: flex;
+  position: relative;
 }
 .hero__title {
   color: #fff;
@@ -204,15 +205,20 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero__deco {
+    position: absolute;
     max-height: 352px;
-    transform: translate(-60%, 100%);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__deco {
-    max-width: 541px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
     max-height: 418px;
-    transform: translate(-5%, 45%);
+    transform: translate(-50%, -9%);
   }
 }
 @media screen and (max-width: 767px) {
@@ -227,13 +233,15 @@ img {
     margin-left: auto;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero__picture {
     z-index: 5;
-    position: relative;
+    position: absolute;
     margin: 0 auto;
+    bottom: 0;
+    right: 32px;
     max-height: 350px;
-    transform: translate(-100%, 120%);
+    transform: translate(0%, 9%);
   }
   .hero__picture::before {
     position: absolute;
@@ -255,11 +263,12 @@ img {
 @media screen and (min-width: 1280px) {
   .hero__picture {
     z-index: 5;
-    position: relative;
+    position: absolute;
     margin: 0 auto;
-    max-width: 459px;
+    bottom: 0;
+    right: 32px;
     max-height: 469px;
-    transform: translate(-15%, 46%);
+    transform: translate(0%, 2%);
   }
   .hero__picture::before {
     position: absolute;

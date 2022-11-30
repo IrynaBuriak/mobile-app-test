@@ -17,9 +17,6 @@
 }
 .hero {
   background: #06071b;
-  // display: flex;
-  // flex-direction: row;
-  // align-items: baseline;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/hero-bgc-tablet.jpg);
@@ -43,6 +40,7 @@
 
   &__cont {
     display: flex;
+    position: relative;
   }
 
   &__title {
@@ -115,13 +113,18 @@
     }
 
     @media screen and (min-width: 768px) {
+      position: absolute;
       max-height: 352px;
-      transform: translate(-60%, 100%);
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0%);
     }
     @media screen and (min-width: 1280px) {
-      max-width: 541px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
       max-height: 418px;
-      transform: translate(-5%, 45%);
+      transform: translate(-50%, -9%);
     }
   }
 
@@ -132,16 +135,19 @@
       top: 0;
       z-index: 1;
       width: 100%;
+
       img {
         margin-left: auto;
       }
     }
-    @media screen and (min-width: 480px) and (max-width: 1279px) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
       z-index: 5;
-      position: relative;
+      position: absolute;
       margin: 0 auto;
+      bottom: 0;
+      right: 32px;
       max-height: 350px;
-      transform: translate(-100%, 120%);
+      transform: translate(0%, 9%);
 
       &::before {
         position: absolute;
@@ -162,11 +168,12 @@
 
     @media screen and (min-width: 1280px) {
       z-index: 5;
-      position: relative;
+      position: absolute;
       margin: 0 auto;
-      max-width: 459px;
+      bottom: 0;
+      right: 32px;
       max-height: 469px;
-      transform: translate(-15%, 46%);
+      transform: translate(0%, 2%);
 
       &::before {
         position: absolute;
